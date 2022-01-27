@@ -1,5 +1,5 @@
 
-//   Call() method
+//   Call() method we can borrow the object
 
 let name={
     fName:"Braj",
