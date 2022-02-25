@@ -61,10 +61,18 @@
 // console.log(true+"Braj")
 // console.log(true+1);
 
-const profile = {
-    name:"braj",
-    getName:()=>{
-        console.log(this.name);
-    }
+// const profile = {
+//     name:"braj",
+//     getName:()=>{
+//         console.log(this.name);
+//     }
+// }
+// profile.getName();
+
+
+
+function x(){
+    console.log(this);
 }
-profile.getName();
+
+x();
