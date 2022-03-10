@@ -20,4 +20,4 @@ const memoizAddition = () =>{
 
 const addition = memoizAddition();
 console.log(addition(20));
-// console.log(addition(20));
+console.log(addition(20));
