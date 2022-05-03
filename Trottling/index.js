@@ -1,15 +1,12 @@
 
 const loggerFunc = () =>{
-
     console.log("Throttled Function")
 }
 
 
 const throttle = (fn,limit) =>{
-
     let flag = true
         return function(){
-
             let context = this;
             // console.log(context)
             let args = arguments;
@@ -26,12 +23,7 @@ const throttle = (fn,limit) =>{
 
 } 
 
-
 const betterLoggerFunction = throttle(loggerFunc,1000)
-
-
-
-
 window.addEventListener("resize",betterLoggerFunction)
 
 
