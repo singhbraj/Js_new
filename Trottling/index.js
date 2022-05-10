@@ -10,7 +10,6 @@ const throttle = (fn,limit) =>{
             let context = this;
             // console.log(context)
             let args = arguments;
-        
             if(flag){
                 fn.apply(context,args)
                 flag=false;
