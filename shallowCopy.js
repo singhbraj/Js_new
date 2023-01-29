@@ -15,4 +15,4 @@ const user = {
   console.log(user)
   console.log(user1)
 
-  console.log(user === user1)
+  // console.log(user === user1)

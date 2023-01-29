@@ -10,6 +10,7 @@ const getData = (name) =>{
 const debounce = function (fn,d) {
     let timer;
     return function(){
+        
         let context = this;
         args = arguments;
         clearInterval(timer);

@@ -3,15 +3,14 @@ const loggerFunc = () =>{
     console.log("Throttled Function")
 }
 
-
 const throttle = (fn,limit) =>{
     let flag = true
         return function(){
-            let context = this;
+            // let context = this;
             // console.log(context)
             let args = arguments;
             if(flag){
-                fn.apply(context,args)
+                fn()
                 flag=false;
                 setTimeout(()=>{
                    flag =true
@@ -19,7 +18,6 @@ const throttle = (fn,limit) =>{
             }
 
         }
-
 } 
 
 const betterLoggerFunction = throttle(loggerFunc,1000)
